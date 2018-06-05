@@ -58,6 +58,11 @@
 		18879A0920AD877800CC328F /* LBLeftTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18879A0820AD877800CC328F /* LBLeftTableViewItem.m */; };
 		18879A0E20AD952600CC328F /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18879A0D20AD952600CC328F /* LeftTableViewCell.m */; };
 		1898C76920B6BD7D004BF8D1 /* LBGoodsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898C76820B6BD7D004BF8D1 /* LBGoodsListItem.m */; };
+		18F77D7720C50C91000BF7CA /* LBDetailBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F77D7620C50C91000BF7CA /* LBDetailBaseViewController.m */; };
+		18F77D7A20C50E1D000BF7CA /* LBDetailTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F77D7920C50E1D000BF7CA /* LBDetailTwoCell.m */; };
+		18F77D7D20C50E4E000BF7CA /* LBDetailThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F77D7C20C50E4E000BF7CA /* LBDetailThreeCell.m */; };
+		18F77D8020C50E77000BF7CA /* LBDetailFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F77D7F20C50E77000BF7CA /* LBDetailFourCell.m */; };
+		18F77D8320C50EB4000BF7CA /* LBDetailFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F77D8220C50EB4000BF7CA /* LBDetailFiveCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +186,16 @@
 		18879A0D20AD952600CC328F /* LeftTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
 		1898C76720B6BD7D004BF8D1 /* LBGoodsListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBGoodsListItem.h; sourceTree = "<group>"; };
 		1898C76820B6BD7D004BF8D1 /* LBGoodsListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBGoodsListItem.m; sourceTree = "<group>"; };
+		18F77D7520C50C91000BF7CA /* LBDetailBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBDetailBaseViewController.h; sourceTree = "<group>"; };
+		18F77D7620C50C91000BF7CA /* LBDetailBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBDetailBaseViewController.m; sourceTree = "<group>"; };
+		18F77D7820C50E1D000BF7CA /* LBDetailTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBDetailTwoCell.h; sourceTree = "<group>"; };
+		18F77D7920C50E1D000BF7CA /* LBDetailTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBDetailTwoCell.m; sourceTree = "<group>"; };
+		18F77D7B20C50E4E000BF7CA /* LBDetailThreeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBDetailThreeCell.h; sourceTree = "<group>"; };
+		18F77D7C20C50E4E000BF7CA /* LBDetailThreeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBDetailThreeCell.m; sourceTree = "<group>"; };
+		18F77D7E20C50E77000BF7CA /* LBDetailFourCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBDetailFourCell.h; sourceTree = "<group>"; };
+		18F77D7F20C50E77000BF7CA /* LBDetailFourCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBDetailFourCell.m; sourceTree = "<group>"; };
+		18F77D8120C50EB4000BF7CA /* LBDetailFiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBDetailFiveCell.h; sourceTree = "<group>"; };
+		18F77D8220C50EB4000BF7CA /* LBDetailFiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBDetailFiveCell.m; sourceTree = "<group>"; };
 		47967B0FF3670F495A204E40 /* Pods-帘邦商城.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-帘邦商城.release.xcconfig"; path = "Pods/Target Support Files/Pods-帘邦商城/Pods-帘邦商城.release.xcconfig"; sourceTree = "<group>"; };
 		8C461BEB342FEAA13E945730 /* libPods-帘邦商城.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-帘邦商城.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -214,6 +229,7 @@
 		18090C5D20BB979A005F3449 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				18F77D6F20C50B78000BF7CA /* GoodsDetail(商品详情) */,
 				18090C5E20BB97E0005F3449 /* GoodsFiltrate(商品筛选) */,
 			);
 			path = Detail;
@@ -263,7 +279,6 @@
 		18090C6E20BB99DA005F3449 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1878562720C238180085815F /* 商品详情Cell */,
 				1878562620C237F80085815F /* 商品列表Cell */,
 			);
 			path = Cell;
@@ -272,7 +287,6 @@
 		18090C6F20BB99E1005F3449 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				1878562920C238740085815F /* 商品详情View */,
 				1878562820C238590085815F /* 侧滑筛选View */,
 			);
 			path = CustomView;
@@ -659,15 +673,6 @@
 			path = "商品列表Cell";
 			sourceTree = "<group>";
 		};
-		1878562720C238180085815F /* 商品详情Cell */ = {
-			isa = PBXGroup;
-			children = (
-				1878562D20C244DD0085815F /* LBDetailIntroduceCell.h */,
-				1878562E20C244DD0085815F /* LBDetailIntroduceCell.m */,
-			);
-			path = "商品详情Cell";
-			sourceTree = "<group>";
-		};
 		1878562820C238590085815F /* 侧滑筛选View */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,15 +682,6 @@
 				187D711620BD47FF00829F5F /* LBFiltrateTopViiew.m */,
 			);
 			path = "侧滑筛选View";
-			sourceTree = "<group>";
-		};
-		1878562920C238740085815F /* 商品详情View */ = {
-			isa = PBXGroup;
-			children = (
-				1878562A20C23F4D0085815F /* LBDetailSildeShowHeadView.h */,
-				1878562B20C23F4D0085815F /* LBDetailSildeShowHeadView.m */,
-			);
-			path = "商品详情View";
 			sourceTree = "<group>";
 		};
 		188799E120AD6D5100CC328F /* CDDPagerController */ = {
@@ -792,6 +788,67 @@
 				186B58E020ABBDD900590D7F /* Category(分类) */,
 			);
 			path = "Extend(扩展)";
+			sourceTree = "<group>";
+		};
+		18F77D6F20C50B78000BF7CA /* GoodsDetail(商品详情) */ = {
+			isa = PBXGroup;
+			children = (
+				18F77D7220C50BB9000BF7CA /* Controller */,
+				18F77D7120C50BB0000BF7CA /* Model */,
+				18F77D7020C50BA8000BF7CA /* View */,
+			);
+			path = "GoodsDetail(商品详情)";
+			sourceTree = "<group>";
+		};
+		18F77D7020C50BA8000BF7CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F77D7420C50BD4000BF7CA /* Cell */,
+				18F77D7320C50BC8000BF7CA /* CustomView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F77D7120C50BB0000BF7CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18F77D7220C50BB9000BF7CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18F77D7520C50C91000BF7CA /* LBDetailBaseViewController.h */,
+				18F77D7620C50C91000BF7CA /* LBDetailBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18F77D7320C50BC8000BF7CA /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1878562A20C23F4D0085815F /* LBDetailSildeShowHeadView.h */,
+				1878562B20C23F4D0085815F /* LBDetailSildeShowHeadView.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		18F77D7420C50BD4000BF7CA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1878562D20C244DD0085815F /* LBDetailIntroduceCell.h */,
+				1878562E20C244DD0085815F /* LBDetailIntroduceCell.m */,
+				18F77D7820C50E1D000BF7CA /* LBDetailTwoCell.h */,
+				18F77D7920C50E1D000BF7CA /* LBDetailTwoCell.m */,
+				18F77D7B20C50E4E000BF7CA /* LBDetailThreeCell.h */,
+				18F77D7C20C50E4E000BF7CA /* LBDetailThreeCell.m */,
+				18F77D7E20C50E77000BF7CA /* LBDetailFourCell.h */,
+				18F77D7F20C50E77000BF7CA /* LBDetailFourCell.m */,
+				18F77D8120C50EB4000BF7CA /* LBDetailFiveCell.h */,
+				18F77D8220C50EB4000BF7CA /* LBDetailFiveCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		80D081F4B4564835A3E6E5B7 /* Frameworks */ = {
@@ -991,6 +1048,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F77D8020C50E77000BF7CA /* LBDetailFourCell.m in Sources */,
 				18090C7220BB9A97005F3449 /* LBCollectionViewCell.m in Sources */,
 				186B58F620ABDF5100590D7F /* ShoppingCartViewController.m in Sources */,
 				18090C8120BC130D005F3449 /* DCSpeedy.m in Sources */,
@@ -1008,6 +1066,8 @@
 				18090C7920BB9C85005F3449 /* LBHeaderReusableView.m in Sources */,
 				1870275220AE7225001A8F3A /* LBRightHeaderItem.m in Sources */,
 				187D711720BD47FF00829F5F /* LBFiltrateTopViiew.m in Sources */,
+				18F77D8320C50EB4000BF7CA /* LBDetailFiveCell.m in Sources */,
+				18F77D7720C50C91000BF7CA /* LBDetailBaseViewController.m in Sources */,
 				188799F920AD6D5100CC328F /* DCPagerProgressView.m in Sources */,
 				186D928F20AAE7C500CC070A /* LBTabbarController.m in Sources */,
 				184F906D20A9602D00CBC233 /* ViewController.m in Sources */,
@@ -1016,6 +1076,7 @@
 				188799F820AD6D5100CC328F /* DCPagerController.m in Sources */,
 				185F356020B6958300FCD53D /* SMenuButton.m in Sources */,
 				18879A0E20AD952600CC328F /* LeftTableViewCell.m in Sources */,
+				18F77D7D20C50E4E000BF7CA /* LBDetailThreeCell.m in Sources */,
 				186D928B20AAE78600CC070A /* LBNavigationController.m in Sources */,
 				186B58F020ABDEF900590D7F /* MessageViewController.m in Sources */,
 				184F907820A9602F00CBC233 /* main.m in Sources */,
@@ -1025,6 +1086,7 @@
 				18090C6420BB9901005F3449 /* LBFiltrateViewController.m in Sources */,
 				1878562C20C23F4D0085815F /* LBDetailSildeShowHeadView.m in Sources */,
 				185F356320B6B69700FCD53D /* LBGoodsTableViewCell.m in Sources */,
+				18F77D7A20C50E1D000BF7CA /* LBDetailTwoCell.m in Sources */,
 				18090C6D20BB99A5005F3449 /* LBContentItem.m in Sources */,
 				18090C6A20BB998E005F3449 /* LBSectionItem.m in Sources */,
 				188799F720AD6D5100CC328F /* UIView+DCPagerFrame.m in Sources */,
