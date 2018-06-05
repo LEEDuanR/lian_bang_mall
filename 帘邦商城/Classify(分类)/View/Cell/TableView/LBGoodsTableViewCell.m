@@ -137,7 +137,6 @@
     _memberPriceLabel.text=[NSString stringWithFormat:@"%@元/%@",goodsListItem.memberprice,goodsListItem.unit];
     _realPriceLabel.text = [NSString stringWithFormat:@"%@元/%@",goodsListItem.real_price,goodsListItem.unit];
     _discountPriceLabel.text=[NSString stringWithFormat:@"+%@元/%@",goodsListItem.discount_price,goodsListItem.unit];
-    
     //对后台传过来的图片url作处理
     NSString *thumb = [NSString stringWithFormat:@"%@",goodsListItem.thumb];
    NSArray *strArr = [thumb  componentsSeparatedByString:@"?"];
@@ -145,13 +144,6 @@
     [_goodsImageView sd_setImageWithURL:[NSURL URLWithString:url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
 //        NSLog(@"error%@ ",error);
     }];
-    
-    
-  //http://img2.suneastzy.com/W5EeOY945LEYQl4rl8oj7C3wrlL04l.jpg?imageView2/0/w/300/h/300/q/90|imageslim
-  // http:\/\/img2.suneastzy.com\/PiJATUsAuaqBu2XoX2Qs25isX8SZQ5.jpg?imageView2\/0\/w\/300\/h\/300\/q\/90|imageslim
-    //http://img2.suneastzy.com/t4l44epK61p0E66E06iE466kem446l.jpeg
-//    [_goodsImageView sd_setImageWithURL:[NSURL URLWithString:@"http://img2.suneastzy.com/W5EeOY945LEYQl4rl8oj7C3wrlL04l.jpg?imageView2/0/w/300/h/300/q/90|imageslim"]];
-    
     
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
