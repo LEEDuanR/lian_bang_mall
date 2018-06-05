@@ -27,6 +27,7 @@
 @property(nonatomic ,strong)NSDictionary *dict;
 @property(nonatomic ,strong)NSDictionary *selectDict;
 
+@property(nonatomic , strong)DiySearchBar *searchBar;
 //拼接的数据
 @property(nonatomic ,assign)NSString *order;
 @property(nonatomic ,assign)NSString *sort;
@@ -49,7 +50,7 @@ static NSString *const LBGoodsTableViewCellID = @"LBGoodsTableViewCell";
     UIView * bottomView=[[UIView alloc]initWithFrame:CGRectMake(0, 64, ScreenW,50)];
     bottomView.backgroundColor= RGB(247, 247, 247);
     [self.view addSubview:bottomView];
-    DiySearchBar *_searchBar = [[DiySearchBar alloc] initWithFrame:CGRectMake(10, 10, ScreenW - 90, 30)];
+    _searchBar = [[DiySearchBar alloc] initWithFrame:CGRectMake(10, 10, ScreenW - 90, 30)];
     _searchBar.placeholder = @"输入关键字...";
     //添加一些阴影
     _searchBar.layer.shadowColor = [UIColor lightGrayColor].CGColor;
@@ -209,6 +210,21 @@ static NSString *const LBGoodsTableViewCellID = @"LBGoodsTableViewCell";
 {
     NSLog(@"点击搜索");
 }
+
+
+// 将点击tableviewcell的时候收回 searchBar 键盘
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_searchBar resignFirstResponder];
+    return indexPath;
+}
+// 滑动的时候 searchBar 回收键盘
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [_searchBar resignFirstResponder];
+}
+
+
 /*
 #pragma mark - Navigation
 

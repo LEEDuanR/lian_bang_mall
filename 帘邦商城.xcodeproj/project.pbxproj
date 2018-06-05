@@ -226,13 +226,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18090C5D20BB979A005F3449 /* Detail */ = {
+		18090C5D20BB979A005F3449 /* Detail(详情) */ = {
 			isa = PBXGroup;
 			children = (
 				18F77D6F20C50B78000BF7CA /* GoodsDetail(商品详情) */,
 				18090C5E20BB97E0005F3449 /* GoodsFiltrate(商品筛选) */,
 			);
-			path = Detail;
+			path = "Detail(详情)";
 			sourceTree = "<group>";
 		};
 		18090C5E20BB97E0005F3449 /* GoodsFiltrate(商品筛选) */ = {
@@ -401,7 +401,7 @@
 				184F90A220A961FC00CBC233 /* Model */,
 				184F90A320A9621D00CBC233 /* Controller */,
 				184F90A120A961EB00CBC233 /* View */,
-				18090C5D20BB979A005F3449 /* Detail */,
+				18090C5D20BB979A005F3449 /* Detail(详情) */,
 			);
 			path = "Classify(分类)";
 			sourceTree = "<group>";
@@ -641,6 +641,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		186DF21B20C638D1005D7A96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1870274820AE6619001A8F3A /* CollectoinView */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,7 +801,7 @@
 			isa = PBXGroup;
 			children = (
 				18F77D7220C50BB9000BF7CA /* Controller */,
-				18F77D7120C50BB0000BF7CA /* Model */,
+				186DF21B20C638D1005D7A96 /* Model */,
 				18F77D7020C50BA8000BF7CA /* View */,
 			);
 			path = "GoodsDetail(商品详情)";
@@ -807,13 +814,6 @@
 				18F77D7320C50BC8000BF7CA /* CustomView */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		18F77D7120C50BB0000BF7CA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		18F77D7220C50BB9000BF7CA /* Controller */ = {
